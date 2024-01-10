@@ -1,30 +1,25 @@
-# React + TypeScript + Vite
+# SPresso React Table Test
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Spresso take home assignment challenge
 
-Currently, two official plugins are available:
+- Using basic API from Dummyjson
+- Utilize TailwindCSS for styling
+- Table have 4 columns ( Name, price, rating, category )
+- Table have 2 states: loading and showing data
+- Table have pagination with 10 items per page, can skip to next page
+- Table have function for filtering using search box, debounced and search upon finished typing
+- Table have sorting function when clicking on header, but currently doesn't show working due to API limitation
+- Table row can be selected using checkbox input, click on it to show JSON in the div below
+- Hooks component
+- Split into component for reusability
+- Using Typescript
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+How to use:
 
-## Expanding the ESLint configuration
+- Run using `npm run dev`
+- Open on `localhost:5173`
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Unfulfilled:
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- Manage using query params
+- Testing lib
